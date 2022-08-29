@@ -16,10 +16,10 @@ namespace EmployePayroll
             switch (empcheck = 0)
             {
                 case 0:
-                    Console.WriteLine("is present");
+                    Console.WriteLine("is Present");
                     break;
                 case 1:
-                    Console.WriteLine("is abscent");
+                    Console.WriteLine("is Absent");
                     break;
                 default:
                     break;
