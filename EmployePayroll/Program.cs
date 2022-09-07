@@ -12,18 +12,18 @@
                 case 1:
                     EmployeePresentAbsent.Random();
                     break;
-                //case 2:
-                //    Dailywages.CalculateDailyWage();
-                //    break;
-                //case 3:
-                //    PartTimeWages.CalculatePercentage();
-                //    break;
-                //case 4:
-                //    PartTimeWagesSwitchcase.CalculateWage();
-                //    break;
-                //case 5:
-                //    MonthlyWage.CalculateMonthlyWage();
-                //    break;
+                case 2:
+                    Dailywages.CalculateDailyWage();
+                    break;
+                case 3:
+                    PartTimeWages.CalculatePercentage();
+                    break;
+                case 4:
+                    PartTimeWagesSwitchcase.CalculateWage();
+                    break;
+                case 5:
+                    MonthlyWage.CalculateMonthlyWage();
+                    break;
                 case 6:
                     TotalWorkingHours.WorkingHours();
                     break;
