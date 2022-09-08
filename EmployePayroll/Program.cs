@@ -27,6 +27,21 @@
                 case 6:
                     TotalWorkingHours.WorkingHours();
                     break;
+                case 7:
+                    Refactor.CalculateEmpWage();
+                    break;
+                case 8:
+                    MultipleCompanies.calculate("D-Mart", 20, 30, 100);
+                    MultipleCompanies.calculate("Reliance", 20, 30, 100);
+                    break;
+                case 9:
+                    EmpWageBuilder dmart = new EmpWageBuilder("D-mart", 20, 2, 10);//creating dmart object
+                    EmpWageBuilder reliance = new EmpWageBuilder("Reliance", 10, 4, 20);//creating reliance object
+                    dmart.computeEmpWage();
+                    Console.WriteLine(dmart.ToString());
+                    reliance.computeEmpWage();
+                    Console.WriteLine(reliance.ToString());
+                    break;
                 default:
                     Console.WriteLine("Entered wrong choice");
                     break;
