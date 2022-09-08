@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Employee Wage!");
-            Console.WriteLine("Choose option\n 1.Check absent or present\n2.Check daily employee wage\n3.Part time wage\n4.Part time wage using switch case\n5.Monthly Wages\n6.Total Working Hours Of Employee\n7.Refactor Code\n8.Wages for Multiple Companies");
+            Console.WriteLine("Choose option\n 1.Check absent or present\n2.Check daily employee wage\n3.Part time wage\n4.Part time wage using switch case\n5.Monthly Wages\n6.Total Working Hours Of Employee\n7.Refactor Code\n8.Wages for Multiple Companies\n9.Employee Wage builder for each companies");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -42,7 +42,12 @@
                     reliance.computeEmpWage();
                     Console.WriteLine(reliance.ToString());
                     break;
-                        break;
+                    case 10:
+                    EmpWageBuilderArray empWageBuilderArray = new EmpWageBuilderArray();
+                    empWageBuilderArray.addCompanyEmpWage("D-Mart", 20, 2, 10);
+                    empWageBuilderArray.addCompanyEmpWage("Reliance", 10, 4, 20);
+                    empWageBuilderArray.computeEmpWage();
+                    break;
                 default:
                     Console.WriteLine("Entered wrong choice");
                     break;
